@@ -4,10 +4,10 @@
 library(vegan) #Load required package
 
 #### import data ####
-dat_com <- read.csv("E:/M.Sc/CCA/OTUdf.csv", header=TRUE) #Import community data
+dat_com <- read.csv("E:/Ph.D/CCA/OTUdf.csv", header=TRUE) #Import community data
 rownames(dat_com) <- dat_com[, 1]
 dat_com <- dat_com[, -1] 
-dat_env <- read.csv("E:/M.Sc/CCA/phd_CCA_021919.csv", header=TRUE) #Import environmental data
+dat_env <- read.csv("E:/Ph.D/CCA/phd_CCA_021919.csv", header=TRUE) #Import environmental data
 rownames(dat_env) <- dat_env[, 1]
 dat_env <- dat_env[, -1] #Necessary to remove the sample IDs
 
@@ -57,10 +57,10 @@ plot(mycca2.2, display=c("bp", "cn"), xlab="CCA1 (34% Variance Explained)", ylab
 ###############
 
 #Calling in data again
-dat_com <- read.csv("E:/M.Sc/CCA/OTUdf.csv", header=TRUE)
+dat_com <- read.csv("E:/Ph.D/CCA/OTUdf.csv", header=TRUE)
 rownames(dat_com) <- dat_com[, 1]
 dat_com <- dat_com[, -1] 
-dat_env <- read.csv("E:/M.Sc/CCA/phd_CCA_021919.csv", header=TRUE)
+dat_env <- read.csv("E:/Ph.D/CCA/phd_CCA_021919.csv", header=TRUE)
 rownames(dat_env) <- dat_env[, 1]
 dat_env <- dat_env[, -1] #Necessary to remove the sample IDs
 
